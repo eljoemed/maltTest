@@ -66,7 +66,7 @@ Exemple d'un message pour faire une demande de calcul de taux :
   }
 }
 
-Resultat :
+Reresultat :
 
 {
    fees:8,
