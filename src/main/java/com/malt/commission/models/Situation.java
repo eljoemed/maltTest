@@ -19,26 +19,42 @@ public class Situation {
 
     @Data
     @AllArgsConstructor
+    @NoArgsConstructor
     public static class Client {
         private String ip;
     }
 
     @Data
     @AllArgsConstructor
+    @NoArgsConstructor
     public static class Freelancer {
         private String ip;
     }
 
     @Data
     @AllArgsConstructor
+    @NoArgsConstructor
     public static class Mission {
         private int lengthInMonths;
     }
 
     @Data
-    @AllArgsConstructor
     public static class CommercialRelation {
         private LocalDateTime firstMission;
         private LocalDateTime lastMission;
+
+        public CommercialRelation() {
+
+        }
+
+        public CommercialRelation(LocalDateTime firstMission, LocalDateTime lastMission) {
+            this.firstMission = firstMission;
+            this.lastMission = lastMission;
+        }
+
+        public CommercialRelation(String firstMission, String lastMission) {
+            this.firstMission = LocalDateTime.parse(firstMission);
+            this.lastMission = LocalDateTime.parse(lastMission);
+        }
     }
 }

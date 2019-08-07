@@ -1,4 +1,4 @@
-package com.malt.commission.calculation;
+package com.malt.commission.services;
 
 import com.malt.commission.models.RatingResult;
 import com.malt.commission.models.Situation;

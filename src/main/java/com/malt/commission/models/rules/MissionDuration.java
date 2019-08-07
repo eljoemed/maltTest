@@ -2,9 +2,11 @@ package com.malt.commission.models.rules;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-public class MissionDuration implements Conditions {
+@NoArgsConstructor
+public class MissionDuration extends Conditions {
     public int gt;
 }
